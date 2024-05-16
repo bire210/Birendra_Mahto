@@ -722,7 +722,9 @@ header .navbar ul li a:hover{
   background: #310ae0f5;
 }
 .work .viewall{
+  margin-top: 2rem;
   display: flex;
+  width: 100%;
   justify-content: center;
 }
 .work .viewall .btn {
