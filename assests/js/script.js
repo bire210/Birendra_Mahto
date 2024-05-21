@@ -80,24 +80,24 @@ function fadeOut() {
 window.onload = fadeOut;
 // pre loader end
 
-// disable developer mode
-document.onkeydown = function (e) {
-  if (e.keyCode == 123) {
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
-    return false;
-  }
-};
+ // disable developer mode also disable the inspect the page
+// document.onkeydown = function (e) {
+//   if (e.keyCode == 123) {
+//     return false;
+//   }
+//   if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+//     return false;
+//   }
+//   if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+//     return false;
+//   }
+//   if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+//     return false;
+//   }
+//   if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+//     return false;
+//   }
+// };
 
 // Start of Tawk.to Live Chat
 // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -145,12 +145,12 @@ $("#contact-form").submit(function (event) {
   console.log("form submitted");
   emailjs.sendForm("service_v7c3m0x", "template_y45sp2h", "#contact-form").then(
     function (response) {
-      console.log("SUCCESS!", response.status, response.text);
+      // console.log("SUCCESS!", response.status, response.text);
       document.getElementById("contact-form").reset();
       alert("Form Submitted Successfully");
     },
     function (error) {
-      console.log("FAILED...", error);
+      // console.log("FAILED...", error);
       alert("Form Submission Failed! Try Again!");
     }
   );
