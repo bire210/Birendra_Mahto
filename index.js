@@ -32,6 +32,6 @@ function showCoding(texts) {
   });
   textContainer.innerHTML = textHTML;
 }
-getCoding().then((data) => {
-  showCoding(data);
-});
+// getCoding().then((data) => {
+//   showCoding(data);
+// });
