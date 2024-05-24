@@ -1,4 +1,4 @@
-[ 
+[
     {
         "id": 1,
         "name": "Anthropologie Clone",
@@ -22,14 +22,13 @@
     {
         "id": 3,
         "name": "Slack web App clone",
-        "desc": "Slack allows teams to organize their communication and work in central location, making it easier to stay connected and collaborate effectively",
+        "desc": "Slack allows teams to communicate and work in central location, making it easier to stay connected and collaborate effectively",
         "image": "../assests/images/projects/Slack.png",
         "links": {
             "view": "https://64b1717a8e0e0a3a6478454e--spontaneous-sherbet-26e664.netlify.app/",
             "code": "https://github.com/bire210/Slack-clone"
         }
-    }
-    ,
+    },
     {
         "id": 4,
         "name": "Tutor Booking System",
@@ -39,8 +38,7 @@
             "view": "https://schedularcom.netlify.app/",
             "code": "https://github.com/krishna8464/Tutoring-Appointment-Booking-System"
         }
-    }
-    ,
+    },
     {
         "id": 5,
         "name": "Bus Ticket booking",
