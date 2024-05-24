@@ -1,34 +1,32 @@
-$(document).ready(function(){
+$(document).ready(function () {
+  $("#menu").click(function () {
+    $(this).toggleClass("fa-times");
+    $(".navbar").toggleClass("nav-toggle");
+  });
 
-    $('#menu').click(function(){
-        $(this).toggleClass('fa-times');
-        $('.navbar').toggleClass('nav-toggle');
-    });
+  $(window).on("scroll load", function () {
+    $("#menu").removeClass("fa-times");
+    $(".navbar").removeClass("nav-toggle");
 
-    $(window).on('scroll load',function(){
-        $('#menu').removeClass('fa-times');
-        $('.navbar').removeClass('nav-toggle');
-
-        if(window.scrollY>60){
-            document.querySelector('#scroll-top').classList.add('active');
-        }else{
-            document.querySelector('#scroll-top').classList.remove('active');
-        }
-    });
+    if (window.scrollY > 60) {
+      document.querySelector("#scroll-top").classList.add("active");
+    } else {
+      document.querySelector("#scroll-top").classList.remove("active");
+    }
+  });
 });
 
 /* ===== SCROLL REVEAL ANIMATION ===== */
 const srtop = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 1000,
-    reset: true
+  origin: "top",
+  distance: "80px",
+  duration: 1000,
+  reset: true,
 });
 
 /* SCROLL EXPERIENCE */
-srtop.reveal('.experience .timeline',{delay: 400});
-srtop.reveal('.experience .timeline .container',{interval: 400}); 
-
+srtop.reveal(".experience .timeline", { delay: 400 });
+srtop.reveal(".experience .timeline .container", { interval: 400 });
 
 // Start of Tawk.to Live Chat
 
@@ -43,7 +41,6 @@ srtop.reveal('.experience .timeline .container',{interval: 400});
 //   })();
 
 // End of Tawk.to Live Chat
-
 
 // disable developer mode also disable the inspect
 // document.onkeydown = function(e) {
@@ -64,14 +61,11 @@ srtop.reveal('.experience .timeline .container',{interval: 400});
 //   }
 // }
 
-document.addEventListener('visibilitychange',
-function(){
-    if(document.visibilityState === "visible"){
-        document.title = "Experience | Portfolio Birendra Mahto";
-        $("#favicon").attr("href","/assests/images/favicon.png");
-    }
-    else {
-        document.title = "Come Back To Portfolio";
-        
-    }
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible") {
+    document.title = "Experience | Portfolio Birendra Mahto";
+    $("#favicon").attr("href", "/assests/images/favicon.jpg");
+  } else {
+    document.title = "Come Back To Portfolio";
+  }
 });

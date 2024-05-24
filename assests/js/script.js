@@ -44,7 +44,7 @@ $(document).ready(function () {
 document.addEventListener("visibilitychange", function () {
   if (document.visibilityState === "visible") {
     document.title = "Portfolio | Birendra";
-    $("#favicon").attr("href", "assests/images/favicon.png");
+    $("#favicon").attr("href", "assests/images/favicon.jpg");
   } else {
     document.title = "Come Back To Portfolio";
   }
@@ -80,7 +80,7 @@ function fadeOut() {
 window.onload = fadeOut;
 // pre loader end
 
- // disable developer mode also disable the inspect the page
+// disable developer mode also disable the inspect the page
 // document.onkeydown = function (e) {
 //   if (e.keyCode == 123) {
 //     return false;
