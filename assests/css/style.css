@@ -756,6 +756,16 @@ header .navbar ul li a:hover{
   flex-direction: column;
   justify-content: center;
 }
+
+.work .tech-stack{
+   width: auto;
+      color: white;
+      background:#0f46a2;
+      padding: 2px 4px;
+      /* Optional: Adds a bit of padding for better readability */
+    
+}
+
 .work .desc p{
   font-size: 1.5rem;
 }

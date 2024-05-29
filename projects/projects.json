@@ -32,7 +32,7 @@
     {
         "id": 4,
         "name": "Tutor Booking System",
-        "desc": "EST API for an Tutor Booking system.This API performs all the fundamental CRUD operations of any Tutor Booking platform with user validation",
+        "desc": "BEST API for an Tutor Booking system.This API performs all the fundamental CRUD operations of any Tutor Booking platform with user validation",
         "image": "../assests/images/projects/TutorBooking.png",
         "links": {
             "view": "https://schedularcom.netlify.app/",
