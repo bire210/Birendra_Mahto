@@ -53,8 +53,8 @@ document.addEventListener("visibilitychange", function () {
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
   strings: [
-    "Node Js Backend Development",
-    "Web Development",
+    "Software Development",
+    "Backend Development",
     "Full Stack Web Development",
   ],
   loop: true,
@@ -141,9 +141,9 @@ fetchData().then((data) => {
 
 $("#contact-form").submit(function (event) {
   event.preventDefault();
-  emailjs.init("axae6jsjASvX2tA-c");
-  console.log("form submitted");
-  emailjs.sendForm("service_v7c3m0x", "template_y45sp2h", "#contact-form").then(
+  emailjs.init("mzLPiCs1X1_N6V1Z_");
+  // console.log("form submitted");
+  emailjs.sendForm("service_v7c3m0x", "template_r3zoijg", "#contact-form").then(
     function (response) {
       // console.log("SUCCESS!", response.status, response.text);
       document.getElementById("contact-form").reset();
